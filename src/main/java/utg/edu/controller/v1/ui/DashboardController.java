@@ -1,6 +1,6 @@
-package utg.edu.v1.ui;
+package utg.edu.controller.v1.ui;
 
-import utg.edu.v1.command.*;
+import utg.edu.controller.v1.command.*;
 import utg.edu.dto.model.bus.AgencyDto;
 import utg.edu.dto.model.bus.BusDto;
 import utg.edu.dto.model.bus.StopDto;

@@ -19,12 +19,12 @@ import javax.validation.constraints.NotNull;
  * This is a global controller written merely for showing the login and logout apis in the
  * swagger documentation allowing users to get the authorisation token from the same interface
  * and use it for executing the secured API operations.
- * <p>
  */
 @RestController
 @RequestMapping("/api")
 @Api(value = "brs-application", description = "Operations pertaining to user login and logout in the BRS application")
 public class FakeController {
+
     @ApiOperation("Login")
     @PostMapping("/auth")
     public void fakeLogin(@RequestBody @Valid LoginRequest loginRequest) {

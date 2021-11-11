@@ -1,26 +1,26 @@
-# our base build image
+# Our base build image
 FROM maven:3.6.0-jdk-8 as maven
 
-# copy the project files
+# Copy the project files
 COPY ./pom.xml ./pom.xml
 
-# build all dependencies
+# Build all dependencies
 RUN mvn dependency:go-offline -B
 
-# copy your other files
+# Copy your other files
 COPY ./src ./src
 
-# build for release
+# Build for release
 RUN mvn package -DskipTests
 
-# our final base image
+# oOur final base image
 FROM openjdk:8-jre-alpine
 
-# set deployment directory
+# Set deployment directory
 WORKDIR /my-project
 
-# copy over the built artifact from the maven image
+# Copy over the built artifact from the maven image
 COPY --from=maven target/springboot-starterkit-1.0.jar ./
 
-# set the startup command to run your binary
+# Set the startup command to run your binary
 CMD ["java", "-jar", "./springboot-starterkit-1.0.jar"]

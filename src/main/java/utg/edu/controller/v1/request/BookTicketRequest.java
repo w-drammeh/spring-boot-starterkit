@@ -1,4 +1,4 @@
-package utg.edu.v1.request;
+package utg.edu.controller.v1.request;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

@@ -1,7 +1,7 @@
-package utg.edu.v1.api;
+package utg.edu.controller.v1.api;
 
-import utg.edu.v1.request.BookTicketRequest;
-import utg.edu.v1.request.GetTripSchedulesRequest;
+import utg.edu.controller.v1.request.BookTicketRequest;
+import utg.edu.controller.v1.request.GetTripSchedulesRequest;
 import utg.edu.dto.model.bus.TicketDto;
 import utg.edu.dto.model.bus.TripDto;
 import utg.edu.dto.model.bus.TripScheduleDto;

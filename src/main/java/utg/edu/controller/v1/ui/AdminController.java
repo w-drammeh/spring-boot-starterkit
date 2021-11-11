@@ -1,7 +1,7 @@
-package utg.edu.v1.ui;
+package utg.edu.controller.v1.ui;
 
 
-import utg.edu.v1.command.AdminSignupFormCommand;
+import utg.edu.controller.v1.command.AdminSignupFormCommand;
 import utg.edu.dto.model.bus.AgencyDto;
 import utg.edu.dto.model.user.UserDto;
 import utg.edu.service.BusReservationService;

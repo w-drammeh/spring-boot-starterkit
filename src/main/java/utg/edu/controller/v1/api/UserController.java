@@ -1,6 +1,6 @@
-package utg.edu.v1.api;
+package utg.edu.controller.v1.api;
 
-import utg.edu.v1.request.UserSignupRequest;
+import utg.edu.controller.v1.request.UserSignupRequest;
 import utg.edu.dto.model.user.UserDto;
 import utg.edu.dto.response.Response;
 import utg.edu.service.UserService;

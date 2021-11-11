@@ -1,4 +1,4 @@
-package utg.edu.v1.command;
+package utg.edu.controller.v1.command;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
