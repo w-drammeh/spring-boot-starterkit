@@ -1,5 +1,9 @@
 package utg.edu;
 
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import utg.edu.model.bus.*;
 import utg.edu.model.user.Role;
 import utg.edu.model.user.User;
@@ -7,10 +11,6 @@ import utg.edu.repository.bus.*;
 import utg.edu.repository.user.RoleRepository;
 import utg.edu.repository.user.UserRepository;
 import utg.edu.util.DateUtils;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -44,14 +44,14 @@ public class BusReservationSystemApplication {
             }
 
             // Create an Admin user
-            User admin = userRepository.findByEmail("admin.agencya@gmail.com");
+            User admin = userRepository.findByEmail("wakadrammeh@gmail.com");
             if (admin == null) {
                 admin = new User()
-                        .setEmail("admin.agencya@gmail.com")
-                        .setPassword("$2a$10$7PtcjEnWb/ZkgyXyxY1/Iei2dGgGQUbqIIll/dt.qJ8l8nQBWMbYO") // "123456"
-                        .setFirstName("John")
-                        .setLastName("Doe")
-                        .setMobileNumber("9425094250")
+                        .setEmail("wakadrammeh@gmail.com")
+                        .setPassword("1234")
+                        .setFirstName("Muhammed")
+                        .setLastName("Drammeh")
+                        .setMobileNumber("2205981679")
                         .setRoles(new HashSet<>(Arrays.asList(adminRole)));
                 userRepository.save(admin);
             }
@@ -99,7 +99,7 @@ public class BusReservationSystemApplication {
                 agencyA = new Agency()
                         .setName("Green Mile Agency")
                         .setCode("AGENCYA")
-                        .setDetails("Reaching desitnations with ease")
+                        .setDetails("Reaching destinations with ease")
                         .setOwner(admin);
                 agencyRepository.save(agencyA);
             }

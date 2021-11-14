@@ -99,7 +99,7 @@ Following libraries were used during the development of this starter kit:
 - **JWT** - Authentication mechanism for REST APIs
 
 ## Application Structure
-Spring Boot is an opinionated framework that makes our life very easy since we don't have to choose the versions of different dependencies based on the version of Spring framework - its all taken care of by Spring Boot. I have tried to follow the same ideology while creating the project structure, at first it might seem overwhelming, but do believe me once you start writing your pieces the structure will help you immensely by saving your time and thinking about questions which are already answered. The structure looks as follows:
+Spring Boot is an opinionated framework that makes our life very easy since we don't have to choose the versions of different dependencies based on the version of Spring framework - its all taken care of by Spring Boot. I have tried to follow the same ideology while creating the project structure. At first it might seem overwhelming, but do believe me once you start writing your pieces the structure will help you immensely by saving your time and thinking about questions which are already answered. The structure looks as follows:
 
 ![Structure](docs/images/project-structure.png)
 

@@ -1,4 +1,4 @@
-package com.starterkit.springboot.brs;
+package utg.edu.gm;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

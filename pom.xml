@@ -7,12 +7,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.3.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
-	<groupId>utg.edu.java</groupId>
+
+	<groupId>utg.edu.gm</groupId>
 	<artifactId>springboot-starterkit</artifactId>
 	<version>1.0</version>
-	<name>Spring Boot Starterkit - MongoDB</name>
+	<name>springboot-starterkit</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot with MongoDB</description>
 
@@ -22,14 +23,6 @@
 		<downloadJavadocs>true</downloadJavadocs>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 	</properties>
-
-	<repositories>
-		<repository>
-			<id>jcenter-snapshots</id>
-			<name>jcenter</name>
-			<url>https://jcenter.bintray.com/</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -80,16 +73,16 @@
 		</dependency>
 
 		<dependency>
+<!--			-Djps.track.ap.dependencies=false-->
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.22</version>
-			<optional>true</optional>
 		</dependency>
 
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
-			<version>2.3.2</version>
+			<version>2.4.4</version>
 		</dependency>
 
 		<dependency>

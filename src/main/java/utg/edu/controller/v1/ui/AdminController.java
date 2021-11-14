@@ -1,11 +1,6 @@
 package utg.edu.controller.v1.ui;
 
 
-import utg.edu.controller.v1.command.AdminSignupFormCommand;
-import utg.edu.dto.model.bus.AgencyDto;
-import utg.edu.dto.model.user.UserDto;
-import utg.edu.service.BusReservationService;
-import utg.edu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -14,6 +9,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
+import utg.edu.controller.v1.command.AdminSignupFormCommand;
+import utg.edu.dto.model.bus.AgencyDto;
+import utg.edu.dto.model.user.UserDto;
+import utg.edu.service.BusReservationService;
+import utg.edu.service.UserService;
 
 import javax.validation.Valid;
 
@@ -21,8 +21,10 @@ import javax.validation.Valid;
 public class AdminController {
     @Autowired
     BusReservationService busReservationService;
+
     @Autowired
     private UserService userService;
+
 
     @GetMapping(value = {"/", "/login"})
     public ModelAndView login() {

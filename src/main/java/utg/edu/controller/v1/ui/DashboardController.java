@@ -1,13 +1,5 @@
 package utg.edu.controller.v1.ui;
 
-import utg.edu.controller.v1.command.*;
-import utg.edu.dto.model.bus.AgencyDto;
-import utg.edu.dto.model.bus.BusDto;
-import utg.edu.dto.model.bus.StopDto;
-import utg.edu.dto.model.bus.TripDto;
-import utg.edu.dto.model.user.UserDto;
-import utg.edu.service.BusReservationService;
-import utg.edu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -17,6 +9,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
+import utg.edu.controller.v1.command.*;
+import utg.edu.dto.model.bus.AgencyDto;
+import utg.edu.dto.model.bus.BusDto;
+import utg.edu.dto.model.bus.StopDto;
+import utg.edu.dto.model.bus.TripDto;
+import utg.edu.dto.model.user.UserDto;
+import utg.edu.service.BusReservationService;
+import utg.edu.service.UserService;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -29,6 +29,7 @@ public class DashboardController {
 
     @Autowired
     private BusReservationService busReservationService;
+
 
     @GetMapping(value = "/dashboard")
     public ModelAndView dashboard() {
