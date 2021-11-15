@@ -20,7 +20,7 @@ FROM openjdk:8-jre-alpine
 WORKDIR /my-project
 
 # Copy over the built artifact from the maven image
-COPY --from=maven target/springboot-starterkit-1.0.jar ./
+COPY --from=maven target/spring-boot-starterkit-1.0.jar ./
 
 # Set the startup command to run your binary
-CMD ["java", "-jar", "./springboot-starterkit-1.0.jar"]
+CMD ["java", "-jar", "./spring-boot-starterkit-1.0.jar"]

@@ -45,7 +45,7 @@ While working on Spring Boot you need not use any server, because Spring Boot al
 
 The greatest thing about Spring Boot is the ability to be up and running in very little time. You don’t have to install a web server like JBoss, Websphere, or even Tomcat for that matter. All you need to do is pull in the proper libraries, annotate, and fire away. If you are going to do a lot of Spring Boot projects, I would highly suggest using the IntelliJ IDEA IDE. It has some great features for making Boot projects really easy to manage. You can of course choose between Maven or Gradle to manage dependencies and builds. This starter kit is based on Maven.
 
-## Application
+## Application (Bus Reservation System)
 This starter kit focuses on how to use Spring Boot following the best practices that are recommended by Spring Framework 5.0: Ensure the code is _loosely coupled_ and that all the layers in the application are completely independent of each other and talk using _neutral objects_. While writing this kit, I have done sufficient research around the code structure and usage of appropriate design patterns to make this as an excellent starting point to begin coding your own web application.
 
 The kit would have been incomplete if it did not have a concrete use case to implement. Here, I have taken a case study of a **Bus Reservation System** and tried to implement an _Admin portal_ which can be operated over browsers and a series of _REST APIs_ to interact with the system using mobile applications or frontend applications written for the browsers. The complete systems has two important actors: Admin user, and the End user.
@@ -68,7 +68,7 @@ The **End user** can use their mobile application (yet to be built, however the 
 5. Filter search results with a date option
 6. Book a ticket for a given trip schedule
 
-The Admin interface and REST APIs both have their independent authentication mechanisms. The web application uses the cookie-based authentication (provided by default by Spring security) and the REST API uses the JWT authentication for access. This application assumes the availability of **MongoDB** installation on the localhost where the server will run or the use of docker-compose to boot up a mongodb container and link the application with it within the realm of docker.
+The Admin interface and REST APIs both have their independent authentication mechanisms. The web application uses the cookie-based authentication (provided by default by Spring security) and the REST API uses the JWT authentication for access. This application assumes the availability of **MongoDB** installation on the localhost where the server will run or the use of docker-compose to boot up a mongodb container and link the application with it within the realm of docker. If you are new to MongoDB, or do not have it installed, follow [this guide](https://docs.mongodb.com/guides/) to get started.
 
 Any changes that the admin users will do on the web portal will impact the search results of the end users. There will be certain use cases which you may find missing here. I hope you will appreciate that the overall idea was to present a way to create such an application completely inside the realm of Spring Boot and not to actually building a fully functional reservation system.
 

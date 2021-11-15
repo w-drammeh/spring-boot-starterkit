@@ -11,9 +11,9 @@
 	</parent>
 
 	<groupId>utg.edu.gm</groupId>
-	<artifactId>springboot-starterkit</artifactId>
+	<artifactId>spring-boot-starterkit</artifactId>
 	<version>1.0</version>
-	<name>springboot-starterkit</name>
+	<name>spring-boot-starterkit</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot with MongoDB</description>
 
